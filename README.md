@@ -35,7 +35,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
 	return 1;
   }
   ```
-  * Paste dumped code
+* Paste dumped code
   ```asm
   0000000000000000 <_Z15test_return_intv>:
    0:   55                      push   %rbp
@@ -44,12 +44,12 @@ Run Makefile with Make. Requires C++17 standard to compile.
    9:   5d                      pop    %rbp
    a:   c3                      ret
   ```
-  * Get function bytes in return
+* Get function bytes in return
   ```c++
   const unsigned char function_bytes[] =        "\x55\x48\x89\xE5\xB8\x01\x00\x00\x00\x5D\xC3";
   const unsigned char function_bytes_cipher[] = "\x66\x66\xB8\xD1\x89\x34\x39\x33\x33\x73\xF2";
   ```
-   * Execute virtual function
+* Execute virtual function
   ```c++
   auto result = execute_virtual_function_bytes
   	<int>(                                          // Virtual function return type
@@ -57,7 +57,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
   		input.c_str()                           // Input arguments
   	);
   ```
-  * Get return from function
+* Get return from function
   ```
   ════════════════════════════════════════
   Dynamically executed function returned: 1
@@ -81,7 +81,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
 	return 0;
   }
   ```
-  * Paste dumped code
+* Paste dumped code
   ```asm
   000000000000000b <_Z20test_check_password2PKc>:
    b:   55                      push   %rbp
@@ -98,7 +98,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
   b4:   5d                      pop    %rbp
   b5:   c3                      ret
   ```
-  * Get function bytes in return
+* Get function bytes in return
   ```c++
   const unsigned char function_bytes[] =        "\x55\x48\x89\xE5\x48\x83\xEC\x30\x13\x48\x89\x4D\x10\x17\x48\xB8\x76\x61\x72\x34\x35\x1E\x73\x73\x66\x21\x48\xBA\x78\x6B\x67\x6F\x6F\x28\x66\x72\x78\x2B\x48\x89\x45\xD0\x2F\x48\x89\x55\xD8\x33\xC6\x45\xE0\x00\x37\x48\xC7\x45\xF8\x00\x00\x00\x3E\x00\x3F\x48\xC7\x45\xF8\x00\x00\x00\x46\x00\x47\xEB\x05\x4E\x49\x48\x83\x45\xF8\x01\x4E\x48\x8B\x55\x10\x52\x48\x8B\x45\xF8\x56\x48\x01\xD0\x59\x0F\xB6\x00\x5C\x84\xC0\x5E\x75\xE9\x49\x60\x48\x83\x7D\xF8\x10\x65\x74\x07\x6E\x67\xB8\x01\x00\x00\x00\x6C\xEB\x42\xB0\x6E\x48\xC7\x45\xF0\x00\x00\x00\x75\x00\x76\xEB\x2C\xA4\x78\x48\x8B\x55\x10\x7C\x48\x8B\x45\xF0\x80\x48\x01\xD0\x83\x0F\xB6\x10\x86\x48\x8D\x4D\xD0\x8A\x48\x8B\x45\xF0\x8E\x48\x01\xC8\x91\x0F\xB6\x00\x94\x38\xC2\x96\x74\x07\x9F\x98\xB8\x01\x00\x00\x00\x9D\xEB\x11\xB0\x9F\x48\x83\x45\xF0\x01\xA4\x48\x83\x7D\xF0\x0F\xA9\x76\xCD\x78\xAB\xB8\x00\x00\x00\x00\xB0\x48\x83\xC4\x30\xB4\x5D\xB5\xC3";
 
@@ -111,7 +111,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
   		input.c_str()                           // Input arguments
   	);
   ```
-  * Get return from function
+* Get return from function
   ```
   ════════════════════════════════════════
   Dynamically executed function returned: 0
