@@ -28,7 +28,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
 * Accepts only 1 input argument.
 
 ## Example usage
-* Write Hello wordl example
+* Write Hello world example
   ```c++
   int test_return_int(){
 	return 1;
@@ -55,7 +55,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
   ════════════════════════════════════════
   ```
 ## Example 2 usage
-* Write Hello wordl example
+* Write Hello world example
   ```c++
   int test_check_password2(const char* str1) {
 	const char str2[] = "var45ssfxkgoofrx";
