@@ -23,7 +23,8 @@ Idea was to create a shelcode generator that produces array of shellcode bytes t
 Run Makefile with Make. Requires C++17 standard to compile.
 
 # Current limitations
-* Opcode must be self relient because links broke after you move assembly to different location. That means that you can't simply call API functions before getting it's function address. 
+* Opcode must be self relient because links broke after you move assembly to different location. That means that you can't simply call API functions before getting it's function address.
+* It is very easy to get no memory access because of broken links.
 * Return type of function must be manually specified in code.
 * Accepts only 1 input argument.
 
