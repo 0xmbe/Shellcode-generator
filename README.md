@@ -14,6 +14,14 @@
 |\____/\___|_| |_|\___|_|  \__,_|\__\___/|_|     |
 +================================================+
 ```
+## Table of contents
+- [Idea](#Idea)
+- [Features](#Features)
+- [Current limitations](#Current-limitations)
+- [Testing](#Testing)
+- [Building](#Building)
+- [Example usage](#Example-usage)
+- [Functionality](#Functionality)
 # Idea
 Idea was to create a shelcode generator that produces array of shellcode bytes that you can save to memory and execute. That way it is harder for RE to understand the code, because function is decrypted on-the-fly and allocated to virtual memory.
 # Features
