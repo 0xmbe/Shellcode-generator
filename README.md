@@ -29,6 +29,33 @@ Idea was to create a shelcode generator that produces array of shellcode bytes t
 * 🔥~~Accepts only 1 input argument.~~
 * All input arguments must be of the same type.
 
+# Testing
+```
+//##################
+// TEST OUTPUT: INT
+//##################
+// TEST INPUT: INT
+* ✔️  int test_01_out_INT_in_2xINT(int num1, int num2)
+// TEST INPUT: CHAR
+* ✔️  int test_02_out_INT_in_CHAR(char c)				
+// TEST INPUT: CONST CHAR*
+* ✔️  int test_03_out_INT_in_PKc(const char* str1) 					
+* ✔️  int test_04_out_INT_in_PKc(const char* str1) 					
+* ✔️  int test_05_out_INT_in_PKc(const char* str1) 					
+* ✔️  int test_06_out_INT_in_PKc(const char* str1) 					
+* ✔️  int test_07_out_INT_in_VOID(){								
+* ✔️  int test_08_out_INT_in_INT(int in){							
+* ✔️  int test_09_out_INT_in_PKc(const char* str1) 				
+// TEST INPUT: CONST CHAR* & INT		----> Currently not supported different input types
+* ❌  int test_10_out_INT_in_2xPKc_1xINT(const char* str1, const char* str2, int length) 	
+* ❌  int test_11_out_INT_in_1xPKc_1xINT(const char* str1, int length) 
+//##################
+// TEST OUTPUT: CONST CHAR*
+//##################
+// TEST INPUT: CONST CHAR*
+* ❌  const char* test_12_out_PKc_in_PKc(const char* str1)								
+
+```
 # Building
 Run Makefile with Make. Requires C++17 standard to compile.
 
