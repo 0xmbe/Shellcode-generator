@@ -28,6 +28,7 @@ Idea was to create a shelcode generator that produces array of shellcode bytes t
 * ✔️  Generation of shellcode assembly opcodes from C++ code.
 * ✔️  Multi input argument execution of virtual methods created from generated shellcode buffer.
 * ✔️  Shellcode encryption.
+* ✔️  Unit testing for bullet proof development.
 * ✔️  Fun
 
 # Current limitations
@@ -36,8 +37,18 @@ Idea was to create a shelcode generator that produces array of shellcode bytes t
 * Return type of function must be manually specified in code.
 * 🔥~~Accepts only 1 input argument.~~
 * All input arguments must be of the same type.
+* Only int returns tested.
+* Unit testing code in the same file as rest of teh code.
 
 # Testing
+```
+[==========] Running 11 tests from 2 test cases.
+[----------] Global test environment set-up.
+...
+[----------] Global test environment tear-down
+[==========] 11 tests from 2 test cases ran. (91 ms total)
+[  PASSED  ] 11 tests.
+```
 ```
 //##################
 // TEST OUTPUT: INT
@@ -66,6 +77,10 @@ Idea was to create a shelcode generator that produces array of shellcode bytes t
 ```
 # Building
 Run Makefile with Make. Requires C++17 standard to compile.
+
+Premake requirements for bulding with VS:
+ - id="GoogleTestAdapter" version="0.18.0" targetFramework="native" developmentDependency="true" 
+ - id="Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn" version="1.8.1.7" targetFramework="native"
 
 ## Example usage
 * Write Hello world example
