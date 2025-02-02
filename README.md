@@ -37,6 +37,7 @@ Idea was to create a shelcode generator that produces array of shellcode bytes t
 * Return type of function must be manually specified in code.
 * 🔥~~Accepts only 1 input argument.~~
 * All input arguments must be of the same type.
+* Shellcode functions can take from 0 to 3 arguments. This limit can easily be higher.
 * Only int returns tested.
 * Unit testing code is in the same file as rest of the code.
 
