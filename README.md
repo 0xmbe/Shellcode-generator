@@ -38,7 +38,7 @@ Idea was to create a shelcode generator that produces array of shellcode bytes t
 * 🔥~~Accepts only 1 input argument.~~
 * All input arguments must be of the same type.
 * Only int returns tested.
-* Unit testing code in the same file as rest of teh code.
+* Unit testing code is in the same file as rest of the code.
 
 # Testing
 ```
