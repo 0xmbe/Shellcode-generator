@@ -82,6 +82,7 @@ Run Makefile with Make. Requires C++17 standard to compile.
 Premake requirements for bulding with VS:
  - id="GoogleTestAdapter" version="0.18.0" targetFramework="native" developmentDependency="true" 
  - id="Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn" version="1.8.1.7" targetFramework="native"
+
 (In case you don't have Google unit tests builded, you can simply remove all test code and it will build normally.)
 
 ## Example usage
