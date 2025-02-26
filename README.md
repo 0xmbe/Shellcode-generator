@@ -24,6 +24,20 @@
 - [Functionality](#Functionality)
 # Idea
 Idea was to create a shelcode generator that produces array of shellcode bytes that you can save to memory and execute. That way it is harder for RE to understand the code, because function is decrypted on-the-fly and allocated to virtual memory.
+
+■ The point of this program is to convert function
+
+-> from this:
+```c++
+int func(int num1, int num2){
+	return num1 + num2;
+}
+```
+-> to this:
+```c++
+const unsigned char function_bytes[] =
+    "\x55\x48\x89\xE5\x89\x4D\x10\x89\x55\x18\x8B\x55\x10\x8B\x45\x18\x01\xD0\x5D\xC3";
+```
 # Features
 * ✔️  Generation of shellcode assembly opcodes from C++ code.
 * ✔️  Multi input argument execution of virtual methods created from generated shellcode buffer.
